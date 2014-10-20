@@ -9,12 +9,12 @@ class ColourField extends TextField {
 	}
 	
 	function Field($properties = array()) {
-		Requirements::javascript(SAPPHIRE_DIR . "/thirdparty/jquery/jquery.js");
+		Requirements::javascript(THIRDPARTY_DIR . "/jquery/jquery.js");
 		Requirements::javascript("colourpickerfield/javascript/colourpicker.js");
 		Requirements::javascript("colourpickerfield/javascript/colourfield.js");
 		Requirements::css("colourpickerfield/css/colourpicker.css");
-		$this->addExtraClass('ColourPickerInput');
-		$style = 'background-color:' . ($this->value ? '#' . $this->value : '#ffffff'). 
+		$this->addExtraClass('ColourPickerInput text');
+		$style = 'background:' . ($this->value ? '#' . $this->value : '#ffffff'). 
 				 '; color: ' . ($this->getTextColour()) . ';';
 		$attributes = array(
 			'type' => 'text',

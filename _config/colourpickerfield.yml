@@ -1,0 +1,9 @@
+---
+Name: colourpickerfield
+After: 'framework/*','cms/*'
+---
+# This is the config file of the SilverStripe ColourPicker Form-Element
+# ColourPicker jQuery widget/plugin by http://www.eyecon.ro/colorpicker/
+LeftAndMain:
+  extra_requirements_css:
+    - colourpickerfield/css/admin.css

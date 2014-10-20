@@ -443,8 +443,8 @@
 	}();
 	$.fn.extend({
 		ColourPicker: ColourPicker.init,
-		ColourPickerHide: ColourPicker.hide,
-		ColourPickerShow: ColourPicker.show,
+		ColourPickerHide: ColourPicker.hidePicker,
+		ColourPickerShow: ColourPicker.showPicker,
 		ColourPickerSetColour: ColourPicker.setColour
 	});
 })(jQuery)
